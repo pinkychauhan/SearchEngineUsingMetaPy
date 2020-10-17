@@ -7,11 +7,12 @@ import pytoml
 
 def load_ranker(cfg_file):
     """
-    Use this function to return the Ranker object to evaluate, 
+    Use this function to return the Ranker object to evaluate,
     The parameter to this function, cfg_file, is the path to a
     configuration file used to load the index.
     """
-    return metapy.index.OkapiBM25()
+    #return metapy.index.OkapiBM25()
+    return metapy.index.OkapiBM25(2.0, 0.70, 500.0);
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
@@ -49,6 +50,6 @@ if __name__ == '__main__':
             ndcg += ev.ndcg(results, query_start + query_num, top_k)
             num_queries+=1
     ndcg= ndcg / num_queries
-            
+
     print("NDCG@{}: {}".format(top_k, ndcg))
     print("Elapsed: {} seconds".format(round(time.time() - start_time, 4)))
