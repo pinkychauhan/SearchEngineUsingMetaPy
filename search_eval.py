@@ -36,7 +36,7 @@ def load_ranker(cfg_file):
  # k1 = 1.2
  # b = 0.75
  # k3 = 500.0
-    return metapy.index.OkapiBM25(1.9, 0.745, 500.0);
+    return metapy.index.OkapiBM25(1.9, 0.743, 500.0);
     #return metapy.index.OkapiBM25(1.9, 0.76, 500.0);
 
 if __name__ == '__main__':
