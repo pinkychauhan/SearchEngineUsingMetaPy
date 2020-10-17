@@ -36,7 +36,7 @@ def load_ranker(cfg_file):
     #0.39824976473548934	0.3599450172327093	0.9163639789738468	0.6976268690276698
     #return metapy.index.OkapiBM25()
     #return metapy.index.OkapiBM25(2.0, 0.70, 500.0);
-    return metapy.index.OkapiBM25(1.8, 0.7, 500.0);
+    return metapy.index.OkapiBM25(1.5, 0.7, 500.0);
     #return InL2Ranker(some_param=3.0);
     #return metapy.index.JelinekMercer(0.72)
     #return metapy.index.DirichletPrior(158)
