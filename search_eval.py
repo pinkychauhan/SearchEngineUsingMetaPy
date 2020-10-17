@@ -35,7 +35,7 @@ def load_ranker(cfg_file):
 
     #8	0.39662969347959043	0.349543232722578	0.9282369989383086	0.7014681385277176
     #9  0.39628727719726115	0.34820265523679056	0.9282369989383086	0.7010317236537484	0
-    return metapy.index.OkapiBM25(1.24, 0.75, 500)
+    return metapy.index.OkapiBM25(1.22, 0.75, 500)
     #return metapy.index.OkapiBM25(2.0, 0.70, 500.0);
     #return metapy.index.OkapiBM25(0.7, 2.9, 500.0);
     #return InL2Ranker(some_param=1.4);
